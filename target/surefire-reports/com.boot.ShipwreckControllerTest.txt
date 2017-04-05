@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.boot.ShipwreckControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.65 sec <<< FAILURE! - in com.boot.ShipwreckControllerTest
+testShipwreckCreate(com.boot.ShipwreckControllerTest)  Time elapsed: 0.618 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.boot.ShipwreckControllerTest.testShipwreckCreate(ShipwreckControllerTest.java:63)
+

@@ -14,7 +14,6 @@ public class PersistenceConfiguration {
 	 
 	@Bean
 	@ConfigurationProperties(prefix="spring.datasource")
-	@Primary
 	public DataSource dataSource(){
 		return DataSourceBuilder.create().build();
 	}
@@ -22,6 +21,7 @@ public class PersistenceConfiguration {
 	@Bean
 	@ConfigurationProperties(prefix="datasource.flyway")
 	@FlywayDataSource
+	@Primary
 	public DataSource flywaydatasource(){
 		return DataSourceBuilder.create().build();
 	}

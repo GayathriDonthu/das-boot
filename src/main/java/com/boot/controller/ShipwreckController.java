@@ -32,7 +32,7 @@ public class ShipwreckController {
 	
 	@RequestMapping(value = "shipwrecks/{id}", method = RequestMethod.GET)
 	public Shipwreck get(@PathVariable Long id){
-		return shipwreckRepository.getOne(id);
+		return shipwreckRepository.findOne(id);
 	}
 	
 	@RequestMapping(value = "shipwrecks/{id}", method = RequestMethod.PUT)
